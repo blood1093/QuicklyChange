@@ -1,0 +1,35 @@
+ext {
+    android = [
+            compileSdkVersion: 28,
+            buildToolsVersion: "28.0.3",
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+            versionCode      : 1,
+            versionName      : "1.0.0",
+
+            //Pro环境
+//            appLabel         : "一键切换PRO",
+//            applicationId    : "com.test.demo.quicklychange.pro",
+//            envName          : "Pro",
+//            envNumber        : "310"
+
+            //Test环境
+//            appLabel         : "一键切换Test",
+//            applicationId    : "com.test.demo.quicklychange.test",
+//            envName          : "Test",
+//            envNumber        : "320"
+
+            //UAT环境
+            appLabel         : "一键切换UAT",
+            applicationId    : "com.test.demo.quicklychange.uat",
+            envName          : "UAT",
+            envNumber        : "330"
+    ]
+
+    dependencies = [
+            "appcompat-v7" : "com.android.support:appcompat-v7:28.0.0",
+            "junit"        : "junit:junit:4.12",
+            "runner"       : "com.android.support.test:runner:1.0.2",
+            "espresso-core": "com.android.support.test.espresso:espresso-core:3.0.2"
+    ]
+}
